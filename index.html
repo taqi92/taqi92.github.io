@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Taqi Tahmid Tanzil — Senior Mobile Engineer & Team Lead</title>
-<meta name="description" content="Taqi Tahmid Tanzil — Senior Mobile Engineer & Team Lead. 8+ years shipping Android & Flutter; led mobile teams at Truely and Dhrubok. Certified Scrum Master. EU Blue Card eligible." />
+<title>Taqi Tahmid Tanzil — Senior Mobile Engineer (Android · Kotlin · Flutter)</title>
+<meta name="description" content="Taqi Tahmid Tanzil — Senior Mobile Engineer. 8+ years shipping Android & Flutter, mobile architecture, and technical leadership; led mobile engineering at Truely. Expanding into Kotlin Multiplatform. Open to relocation: Ireland, New Zealand, Europe." />
 <meta name="author" content="Taqi Tahmid Tanzil" />
 <meta name="theme-color" content="#030303" />
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Taqi Tahmid Tanzil — Senior Mobile Engineer & Team Lead" />
-<meta property="og:description" content="Senior mobile engineer & team lead. Android · Flutter · BLE · Scrum. Open to senior and lead mobile roles." />
+<meta property="og:title" content="Taqi Tahmid Tanzil — Senior Mobile Engineer (Android · Kotlin · Flutter)" />
+<meta property="og:description" content="Senior mobile engineer. Android · Kotlin · Flutter · Mobile Architecture · Technical Leadership. Open to relocation: Ireland, New Zealand, Europe." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -890,6 +890,7 @@ section {
   min-width: 0;
   cursor: default;
   isolation: isolate;
+  text-decoration: none;
 }
 .bento__card::before {
   content: '';
@@ -993,6 +994,13 @@ section {
   border: 1px solid var(--line);
   border-radius: 999px;
   letter-spacing: -0.005em;
+}
+.bento__link {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent-bright);
+  letter-spacing: -0.005em;
+  margin-top: 4px;
 }
 
 /* Bento — feature card with big number */
@@ -1119,6 +1127,54 @@ section {
 @media (max-width: 600px) {
   .skills-bento { grid-template-columns: 1fr; }
   .skill-card.x3, .skill-card.x2, .skill-card.x4 { grid-column: span 1; }
+}
+
+/* ============================================================
+   FOCUS — current engineering focus strip
+   ============================================================ */
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.focus-card {
+  background: var(--bg-elev);
+  border: 1px solid rgba(45,212,191,0.16);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+.focus-card:hover {
+  border-color: rgba(45,212,191,0.35);
+  background: var(--bg-elev-2);
+}
+.focus-card .fk {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--accent-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+  display: block;
+}
+.focus-card h4 {
+  font-family: var(--geist);
+  font-weight: 500;
+  font-size: 15.5px;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.focus-card p {
+  font-size: 13px;
+  color: var(--ink-dim);
+  line-height: 1.55;
+}
+@media (max-width: 900px) {
+  .focus-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .focus-grid { grid-template-columns: 1fr; }
 }
 
 /* ============================================================
@@ -1286,6 +1342,12 @@ section {
   border-color: var(--line-strong);
   background: rgba(255,255,255,0.02);
 }
+.contact__note {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-muted);
+  margin-top: 28px;
+}
 
 /* ============================================================
    FOOTER
@@ -1356,6 +1418,7 @@ section {
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Work</a></li>
     <li><a href="#skills">Stack</a></li>
+    <li><a href="#focus">Focus</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="mailto:t.tanzil92@gmail.com" class="nav__cta">
@@ -1368,28 +1431,29 @@ section {
   <div class="hero__content">
     <a href="#contact" class="hero__badge reveal">
       <span class="pill">Available</span>
-      Open to Senior & Lead mobile roles · EU
+      Open to relocation — Ireland, New Zealand &amp; Europe
     </a>
 
     <h1 class="hero__title reveal d1">
       Senior mobile engineer.<br/>
-      <span class="accent">Builds the app and the team.</span>
+      <span class="accent">Android, Flutter, and the architecture between them.</span>
     </h1>
 
     <div class="hero__sub reveal d2">
-      <span>Android · Flutter</span>
+      <span>Android · Kotlin</span>
       <span class="pipe">·</span>
-      <span>BLE / IoT</span>
+      <span>Flutter</span>
       <span class="pipe">·</span>
-      <span>Team Lead</span>
+      <span>Mobile Architecture</span>
       <span class="pipe">·</span>
-      <span>CSM</span>
+      <span>Technical Leadership</span>
     </div>
 
     <p class="hero__pitch reveal d3">
-      <strong>8+ years</strong> shipping Android &amp; Flutter in production. Led Truely's mobile engineering
-      team through 8× user growth, ran a 4–5 person consultancy squad end-to-end, and owned a telecom
-      company's entire mobile function solo. Certified Scrum Master — and still shipping code every week.
+      <strong>8+ years</strong> building production Android and Flutter applications — architecture,
+      offline-first systems, and mobile team leadership. Most recently led mobile engineering for
+      <strong>Truely</strong>, a global travel eSIM product. Now expanding into
+      <strong>Kotlin Multiplatform, mobile system design, and Kotlin backend development.</strong>
     </p>
 
     <div class="hero__ctas reveal d4">
@@ -1407,7 +1471,7 @@ section {
         <span class="val">Dhaka · Remote</span>
       </div>
       <div>
-        <span class="label">Current</span>
+        <span class="label">Last role</span>
         <span class="val">Truely Pte Ltd</span>
       </div>
       <div>
@@ -1415,8 +1479,8 @@ section {
         <span class="val"><span class="live"></span>Available</span>
       </div>
       <div>
-        <span class="label">Visa</span>
-        <span class="val">EU Blue Card</span>
+        <span class="label">Relocation</span>
+        <span class="val">Ireland · NZ · Europe</span>
       </div>
     </div>
   </div>
@@ -1449,8 +1513,8 @@ section {
               <div class="v">Android · Flutter</div>
             </div>
             <div class="phone__card">
-              <div class="k">Hardware</div>
-              <div class="v">BLE · eSIM · IoT</div>
+              <div class="k">Expanding into</div>
+              <div class="v">KMP · Backend</div>
             </div>
           </div>
 
@@ -1491,29 +1555,36 @@ section {
   <div class="about__grid">
     <div class="about__head reveal">
       <div class="eyebrow">About</div>
-      <h2 class="section-title">Senior engineer who's <span class="accent">already led teams.</span></h2>
+      <h2 class="section-title">Android first. <span class="accent">Still building.</span></h2>
     </div>
     <div class="about__body">
       <p class="reveal">
-        I started as an Android developer in 2017 and never stopped shipping. Along the way I picked up the
-        part of the job most engineers avoid — <strong>hiring, sprint facilitation, client discovery, the
-        difficult conversations</strong> — and found I liked it as much as the code.
+        I started as an Android developer in 2017 and never stopped shipping. Flutter came next, then
+        the parts of the job that sit around the code — <strong>architecture decisions, sprint
+        facilitation, hiring, mentoring, the difficult conversations</strong>.
       </p>
       <p class="reveal d1">
-        At <strong>Miaki</strong> I was the sole mobile engineer for a telecom VAS platform — I owned Android
-        development end-to-end, built the release pipeline from scratch, and cut crash rates 30%. At
+        At <strong>Miaki</strong> I was the sole mobile engineer for a telecom VAS platform — owned Android
+        development end-to-end, built the release pipeline from scratch, cut crash rates 30%. At
         <strong>Dhrubok</strong> I led a 4–5 person squad through full product lifecycles — discovery to Play
         Store — and ran the agile ceremonies as a <mark>Certified Scrum Master</mark>.
       </p>
       <p class="reveal d2">
-        At <strong>Truely</strong> I lead mobile engineering on a global eSIM platform — hired the team's
-        second engineer, own sprint planning and architecture, built the CI/CD pipeline that cut release
-        cycles 40%, and bridged the Flutter app into native Android eUICC APIs. The platform grew
-        <strong>8× users and 9× revenue</strong> across 150+ countries during my time on it.
+        Most recently at <strong>Truely</strong>, a global travel eSIM product, I led mobile engineering —
+        hired the team's second engineer, owned sprint planning and architecture, built the CI/CD pipeline
+        that cut release cycles 40%, and bridged the Flutter app into native Android eUICC APIs. The
+        platform grew <strong>8× users and 9× revenue</strong> across 150+ countries during my time there
+        (Mar 2025 – Apr 2026).
       </p>
       <p class="reveal d3">
-        I'm looking for senior and lead mobile roles where building the team matters as much as building
-        the product — with engineering management as the longer arc. Berlin, Amsterdam, remote-EU all welcome.
+        I'm now expanding deliberately into <strong>Kotlin Multiplatform, mobile system design, and Kotlin
+        backend development</strong> — building on the Android and Flutter foundation rather than replacing
+        it. I'm a senior mobile engineer who can lead technically, not an engineering manager who happens
+        to code.
+      </p>
+      <p class="reveal d4">
+        Open to relocation across <strong>Ireland, New Zealand and Europe</strong>, and to strong-fit
+        opportunities elsewhere internationally.
       </p>
       <div class="signature reveal d4">Taqi T.</div>
     </div>
@@ -1532,16 +1603,16 @@ section {
     <article class="tl-item reveal">
       <div class="tl-item__head">
         <h3 class="tl-item__role">
-          Team Lead, Mobile Engineering <span class="at">·</span> <span class="co">Truely Pte Ltd</span>
+          Mobile Team Lead / Software Engineer <span class="at">·</span> <span class="co">Truely Pte Ltd</span>
         </h3>
-        <span class="tl-item__period">Mar 2025 — Present</span>
+        <span class="tl-item__period">Mar 2025 — Apr 2026</span>
       </div>
       <div class="tl-item__loc">Remote · Singapore</div>
       <ul class="tl-item__list">
-        <li>Lead Truely's mobile engineering team — hired its second engineer, own sprint planning and architecture decisions during <strong>8× user growth and 9× revenue growth</strong>.</li>
+        <li>Led Truely's mobile engineering team — hired its second engineer, owned sprint planning and architecture decisions during <strong>8× user growth and 9× revenue growth</strong>.</li>
         <li>Bridged the Flutter app into <strong>native Android eUICC/LPA APIs</strong> for eSIM provisioning — resolving OEM-specific edge cases across Samsung, Pixel, OnePlus and Xiaomi.</li>
-        <li>Built <strong>CI/CD pipelines</strong> for automated build, test and Play Store deployment — release cycles down <strong>40%</strong>; handle App Store submissions end-to-end (code signing, provisioning, CocoaPods).</li>
-        <li>Mentor engineers on architecture, Coroutines and Flutter async patterns; built the <strong>reusable UI component library</strong> and Bloc/CLEAN skeleton the squad ships on daily.</li>
+        <li>Built <strong>CI/CD pipelines</strong> for automated build, test and Play Store deployment — release cycles down <strong>40%</strong>; handled App Store submissions end-to-end (code signing, provisioning, CocoaPods).</li>
+        <li>Mentored engineers on architecture, Coroutines and Flutter async patterns; built the <strong>reusable UI component library</strong> and Bloc/CLEAN skeleton the squad shipped on daily.</li>
       </ul>
     </article>
 
@@ -1611,7 +1682,7 @@ section {
   <div class="reveal">
     <div class="eyebrow">Selected work</div>
     <h2 class="section-title">Things I've <span class="accent">actually shipped.</span></h2>
-    <p class="section-lead">A small slice — the ones that taught me the most about scaling teams, shipping under deadline, and integrating hardware that doesn't lie.</p>
+    <p class="section-lead">Production work, plus the engineering exploration that shows how I think about architecture when nobody's asking me to.</p>
   </div>
 
   <div class="bento">
@@ -1622,7 +1693,7 @@ section {
         <span class="bento__idx">/ 01</span>
       </div>
       <h3 class="bento__title">Truely eSIM <span class="accent">Platform</span></h3>
-      <p class="bento__desc">Multi-module Android + Flutter platform serving 150+ countries. Led the architectural refactor, owned CI/CD, mentored the squad. <strong>8× users, 9× revenue, 40% faster releases.</strong></p>
+      <p class="bento__desc">Multi-module Android + Flutter platform serving 150+ countries. Led the architectural refactor, owned CI/CD, mentored the squad. <strong>8× users, 9× revenue, 40% faster releases.</strong> Mar 2025 – Apr 2026.</p>
       <div class="bento__stack">
         <span>Android</span><span>Flutter</span><span>eSIM API</span><span>CI/CD</span><span>Multi-module</span>
       </div>
@@ -1637,11 +1708,29 @@ section {
       <p class="bento__desc">Authenticated in real-time on Coke Studio with <strong>zero downtime</strong>. Offline-first fallback under live-event pressure.</p>
     </article>
 
+    <!-- Offline-first exploration: Android / Flutter / KMP -->
+    <article class="bento__card x6 reveal" data-tilt>
+      <div class="bento__head">
+        <span class="bento__tag">Engineering Exploration</span>
+        <span class="bento__idx">/ 02</span>
+      </div>
+      <h3 class="bento__title">Offline-First, <span class="accent">Three Ways</span></h3>
+      <p class="bento__desc">Built the same offline-first problem — add a user, store locally when offline, sync to server on reconnect — across <strong>Android, Flutter, and Kotlin Multiplatform</strong> to compare the architectural trade-offs between them directly, rather than reading about them.</p>
+      <div class="bento__stack">
+        <span>Android (MVVM boilerplate)</span><span>Flutter (Clean Architecture)</span><span>Kotlin Multiplatform</span>
+      </div>
+      <div class="bento__stack">
+        <a href="https://github.com/taqi92/Android_MVVM_BoilerPlate-1.0" target="_blank" rel="noopener" class="bento__link">Android repo ↗</a>
+        <a href="https://github.com/taqi92/flutter_clean_arch_boilerplat_1.0" target="_blank" rel="noopener" class="bento__link">Flutter repo ↗</a>
+        <a href="https://github.com/taqi92/KmpUserList" target="_blank" rel="noopener" class="bento__link">KMP repo ↗</a>
+      </div>
+    </article>
+
     <!-- Dexulin -->
     <article class="bento__card x3 reveal" data-tilt>
       <div class="bento__head">
         <span class="bento__tag">Healthcare · BLE</span>
-        <span class="bento__idx">/ 02</span>
+        <span class="bento__idx">/ 03</span>
       </div>
       <h3 class="bento__title">Dexulin — Clinical <span class="accent">Diabetic Monitoring</span></h3>
       <p class="bento__desc">Tech lead on a clinical-grade Android app: Google Fit integration plus BLE communication with InBody body-composition devices.</p>
@@ -1654,7 +1743,7 @@ section {
     <article class="bento__card x3 reveal d1" data-tilt>
       <div class="bento__head">
         <span class="bento__tag">IoT · Industrial</span>
-        <span class="bento__idx">/ 03</span>
+        <span class="bento__idx">/ 04</span>
       </div>
       <h3 class="bento__title">Forklift <span class="accent">Operator App</span></h3>
       <p class="bento__desc">BLE-driven Flutter app for industrial forklift operators. Platform channels, ruggedised UX, low-latency device pairing — where a dropped connection is a safety issue.</p>
@@ -1663,11 +1752,24 @@ section {
       </div>
     </article>
 
+    <!-- SmartJSONViewer -->
+    <article class="bento__card x2 reveal" data-tilt>
+      <div class="bento__head">
+        <span class="bento__tag">Independent Product</span>
+        <span class="bento__idx">/ 05</span>
+      </div>
+      <h3 class="bento__title">SmartJSON<span class="accent">Viewer</span></h3>
+      <p class="bento__desc">A self-built developer tool for inspecting and formatting JSON.</p>
+      <div class="bento__stack">
+        <a href="https://smartjsonviewer.com/" target="_blank" rel="noopener" class="bento__link">smartjsonviewer.com ↗</a>
+      </div>
+    </article>
+
     <!-- TOMO -->
     <article class="bento__card x2 reveal" data-tilt>
       <div class="bento__head">
         <span class="bento__tag">Social</span>
-        <span class="bento__idx">/ 04</span>
+        <span class="bento__idx">/ 06</span>
       </div>
       <h3 class="bento__title">TOMO <span class="accent">Community</span></h3>
       <p class="bento__desc">Flutter community/social app — feed, identity, real-time interactions. The build where the Bloc/CLEAN skeleton was first proven.</p>
@@ -1680,7 +1782,7 @@ section {
     <article class="bento__card x2 reveal d1" data-tilt>
       <div class="bento__head">
         <span class="bento__tag">Events</span>
-        <span class="bento__idx">/ 05</span>
+        <span class="bento__idx">/ 07</span>
       </div>
       <h3 class="bento__title">Coke Studio <span class="accent">Event Auth</span></h3>
       <p class="bento__desc">Sole-engineer build of the concert auth system. Offline-first fallback, ticket validation, edge-case handling under pressure.</p>
@@ -1693,7 +1795,7 @@ section {
     <article class="bento__card x2 reveal d2" data-tilt>
       <div class="bento__head">
         <span class="bento__tag">Telecom · VAS</span>
-        <span class="bento__idx">/ 06</span>
+        <span class="bento__idx">/ 08</span>
       </div>
       <h3 class="bento__title">Miaki VAS <span class="accent">Suite</span></h3>
       <p class="bento__desc">Sole mobile engineer shipping multiple VAS Android apps for a major telecom. Crash rate reduced <strong>30%</strong>.</p>
@@ -1760,7 +1862,7 @@ section {
       </div>
       <ul>
         <li>REST</li><li>GraphQL</li><li>Firebase</li>
-        <li>GCP</li><li>GitHub Actions</li><li>Docker</li>
+        <li>GCP</li><li>GitHub Actions</li><li>Codemagic</li><li>Docker</li>
       </ul>
     </div>
     <div class="skill-card wide reveal">
@@ -1774,6 +1876,37 @@ section {
         <li>Client-facing communication</li><li>Cross-functional delivery</li>
         <li>Code review standards</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CURRENT ENGINEERING FOCUS -->
+<section id="focus" class="wrap">
+  <div class="reveal">
+    <div class="eyebrow">Current engineering focus</div>
+    <h2 class="section-title">Where I'm <span class="accent">expanding.</span></h2>
+    <p class="section-lead">Active development areas, building on the Android and Flutter foundation above — not years of professional experience yet.</p>
+  </div>
+  <div class="focus-grid">
+    <div class="focus-card reveal">
+      <span class="fk">Expanding</span>
+      <h4>Kotlin Multiplatform</h4>
+      <p>Shared business logic across Android and iOS, explored hands-on through the offline-first KMP project above.</p>
+    </div>
+    <div class="focus-card reveal d1">
+      <span class="fk">Expanding</span>
+      <h4>Mobile System Design</h4>
+      <p>Thinking at the level of module boundaries, data flow and sync strategy across a whole mobile platform, not just a single app.</p>
+    </div>
+    <div class="focus-card reveal d2">
+      <span class="fk">Expanding</span>
+      <h4>Offline-First Architecture</h4>
+      <p>Local-first data, conflict resolution and sync — the same problem worked through Android, Flutter and KMP.</p>
+    </div>
+    <div class="focus-card reveal d3">
+      <span class="fk">Expanding</span>
+      <h4>Kotlin Backend Development</h4>
+      <p>Extending Kotlin skill toward server-side development, as a natural adjacent step from Android and KMP.</p>
     </div>
   </div>
 </section>
@@ -1816,23 +1949,24 @@ section {
 <section id="contact" class="wrap contact">
   <div class="eyebrow reveal" style="justify-content:center;">Contact</div>
   <h2 class="contact__lead reveal d1">
-    Hiring a senior mobile engineer<br/>
-    who can also<br/>
-    <span class="accent">lead the team?</span>
+    Hiring a senior<br/>
+    mobile engineer<br/>
+    <span class="accent">who can lead?</span>
   </h2>
   <a href="mailto:t.tanzil92@gmail.com" class="contact__email reveal d2">
     t.tanzil92@gmail.com <span class="arr">↗</span>
   </a>
   <div class="contact__socials reveal d3">
-    <a href="https://linkedin.com/in/t-t-tanzil" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/t-t-tanzil/" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://github.com/taqi92" target="_blank" rel="noopener">GitHub</a>
     <a href="tel:+8801937970970">+880 1937 970970</a>
   </div>
+  <p class="contact__note reveal d4">Open to relocation — Ireland, New Zealand, Europe, and other strong-fit international roles. EU Blue Card eligible.</p>
 </section>
 
 <footer class="foot">
   <span>© 2026 Taqi Tahmid Tanzil</span>
-  <span class="availability"><span class="dot"></span> Open to Senior & Lead mobile roles · EU relocation OK</span>
+  <span class="availability"><span class="dot"></span> Open to relocation — Ireland · New Zealand · Europe</span>
 </footer>
 
 <script>
